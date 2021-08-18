@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car wash</title>
+    <!-- slider from swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>C</span>ar <span>W</span>ash</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#vehicles">We Can Clean</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container" >
+            <input type="search" id="search-bar" placeholder="search here...." >
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <div class="login-form-container">
+        <i class="fas fa-times-circle" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter Your Email">
+            <input type="password" class="box" placeholder="Enter Your Password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>Forgot password <a href="#">Click here</a></p>
+            <p>Dont have an account <a href="#">Register here</a></p>
+        </form>
+    </div>
+
+    <!-- home section starts...... -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>We Are Ready To Clean</h3>
+            <p>Let us to help you,fast and clean</p>
+            <a href="#" class="btn">Discover Plans</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <!-- book section starts...... -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/book.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>place</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>date</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Vehicle</h3>
+                    <select id="vehicless" name="vehiclelist" form="vehicleform">
+                    <option value="Bike">Bike</option>
+                    <option value="Hatchback">Hatchback</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="Suv">Suv</option>
+                    <option value="Seven Seater">Seven Seater</option>
+                    <option value="Super Car">Super Car</option>
+                    <option value="Bus">Bus</option>
+                    <option value="Truck">Truck</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <h3>Number of Vehicles</h3>
+                    <input type="number" placeholder="Number of Vehicles">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+        
+    </section>
+    <!-- packages section starts.... -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/p4.normal.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-hand-sparkles"></i>  Normal CarWash</h3>
+                    <p>It is a type of normal car wash which is conducted by soap and water and it is a hand wash.</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs 500--<span>Rs 1500</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p3.foam.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-hand-sparkles"></i>  Foam CarWash</h3>
+                    <p>Snow foam detergents encapsulate road grime, dirt, dust, and pollen, lifting it away from the surface of your vehicle.</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">Rs 600--<span>Rs 1600</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p1.brush.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-hand-sparkles"></i>  Brush CarWash</h3>
+                    <p>This simple car wash brush outperforms any mitter and tackles problem areas such as windshield eyebrows, front grills and upper rear windows.</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 700--<span>Rs 1800</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <img src="images/p1.brushless.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-hand-sparkles"></i>  Brushless CarWash</h3>
+                    <p>The brushless process uses the latest technology, Fiber-Soft® , which gently cleans your car with safe, biodegradable shampoos and cleaners.</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 800--<span>Rs 2000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p5.interior.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-hand-sparkles"></i>  Interior CarWash</h3>
+                    <p>As the Outside it is also important that the interior is also clean.And we can make it sure by the excellent hands.</p>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 700--<span>Rs 1800</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- services section starts -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-stopwatch"></i>
+                <h2>Time Management</h2>
+                <p>Pick up the vehicle for wash or Reach towards the vehicle in no time after the booking</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-truck"></i>
+                <h2>Fast Delivery</h2>
+                <p>Service the vehicle as fast as you can't imagine</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-handshake"></i>
+                <h2>Good Hands</h2>
+                <p>Expertised workers to take care of the vehicle as you do</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h2>All over India</h2>
+                <p>To reach towards you we have branches all over in india</p>
+            </div>
+        </div>
+    </section>
+    <!-- gallery section starts -->
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading">
+            <span>W</span>
+            <span>e</span>
+            <span class="space"></span>
+            <span>c</span>
+            <span>a</span>
+            <span>n</span>
+            <span class="space"></span>
+            <span>c</span>
+            <span>l</span>
+            <span>e</span>
+            <span>a</span>
+            <span>n</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/vehicle bike.jpeg">
+                <div class="content">
+                    <h1>Bike</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/vehicle hatchback.jpg">
+                <div class="content">
+                    <h1>Hatchback</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>    
+            <div class="box">
+                <img src="./images/vehicle sedan.webp">
+                <div class="content">
+                    <h1>Sedan</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/vehicle suv.jpg">
+                <div class="content">
+                    <h1>Suv</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/vehicle 7seater.jpg">
+                <div class="content">
+                    <h1>Seven Seater</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/vehicle supercar.jpg">
+                <div class="content">
+                    <h1>Supercar</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/vehicle volvo.jpg">
+                <div class="content">
+                    <h1>Bus</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/vehicle truck.png">
+                <div class="content">
+                    <h1>Truck</h1>
+                    <p>Cleans it at its full extension that leaves no dust or dirt or mark in it</p>
+                    <a href="#" class="btn">Book</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/prithviraj.jpg" alt="">
+                        <h3>Prithviraj</h3>
+                        <p>Excellent service from them.Took care of my Lamborgini and make it like that fresh car it was.</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/Dulquar.jpg" alt="">
+                        <h3>Dulquar Salman</h3>
+                        <p>Excellent service from them.Took care of my Porsche and make it like that fresh car it was.</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>    
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/nivin.jpeg" alt="">
+                        <h3>Nivin Pauly</h3>
+                        <p>Excellent service from them.Took care of my Mini Cooper and make it like that fresh car it was.</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/asif ali.jpg" alt="">
+                        <h3>Asif Ali</h3>
+                        <p>Excellent service from them.Took care of my Benz and make it like that fresh car it was.</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/manju warrier.jpg" alt="">
+                        <h3>Manju Warrier</h3>
+                        <p>Excellent service from them.Took care of my BMW and make it like that fresh car it was.</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/kunchako boban.jpg" alt="">
+                        <h3>Kunchako Boban</h3>
+                        <p>Excellent service from them.Took care of my Mini Cooper and make it like that fresh car it was.</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./images/contact.png" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+    </section>
+    <!-- footer section starts here -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rem vel nihil illo blanditiis suscipit.</p>
+            </div>
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="">kerala</a>
+                <a href="">Tamilnadu</a>
+                <a href="">karnataka</a>
+                <a href="">maharashtra</a>
+                <a href="">delhi</a>
+                <a href="">andhra pradesh</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#services">services</a>
+                <a href="#vehicles">we can clean</a>
+                <a href="#review">review</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us on</h3>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+            </div>
+        </div>
+        <h1 class="credit">created by <span>mr. Yadhukrishnan </span>| all rights reserved !</h1>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
